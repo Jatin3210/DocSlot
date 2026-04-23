@@ -1,119 +1,70 @@
-# Hospital Management System
+# Getting Started with Create React App
 
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-green.svg)](https://www.mongodb.com/)
-[![Express](https://img.shields.io/badge/Express-Framework-blue.svg)](https://expressjs.com/)
-[![React](https://img.shields.io/badge/React-Library-61DAFB.svg)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-Environment-339933.svg)](https://nodejs.org/)
-
-## Overview
-
-The Hospital Management System is a web application designed to streamline hospital operations, manage patient records, and enhance the overall efficiency of healthcare services. This application is built using React for the frontend and Node.js with Express for the backend, along with MongoDB for data storage.
-
-## Features
-
-- User authentication for patients, doctors, and admins
-- Patient management including records and appointments
-- Doctor management with profiles and schedules
-- Admin dashboard for overseeing hospital operations
-- Responsive design for mobile and desktop users
-
-## Technologies Used
-
-- **Frontend:**
-  - React
-  - React Router
-  - Tailwind CSS
-  - Lucide Icons
-  - Axios for API calls
-
-- **Backend:**
-  - Node.js
-  - Express
-  - MongoDB
-  - Mongoose
-  - JWT for authentication
-  - dotenv for environment variable management
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- MongoDB (local or cloud instance)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/MKPTechnicals/Hospital-Management-System-MERN.git
-   ```
-
-2. Navigate to the frontend directory and install dependencies:
-
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-3. Navigate to the backend directory and install dependencies:
-
-   ```bash
-   cd backend
-   npm install
-   ```
-
-4. Update a `/backend/server.js` & `/backend/createAdmin.js` file in the backend directory and add your MongoDB connection string:
-
-   ```js
-   // MongoDB connection
-   mongoose.connect('<your_MongoDB_connection_string>', {
-   ```
-5. To create first admin, add your details to `/backend/createAdmin.js` file in backend directory:
-
-    ```js
-    const admin = new Admin({
-      firstName: "abc",
-      lastName: "xyz",
-      email: "abc@gmail.com",
-      password: "xyz123", 
-      role: "admin"
-    });
-    ```
-
-    Then, execute it once using:
-  
-    ```bash
-    node createAdmin.js
-    ```
-
-### Running the Application
-
-1. Start the backend server:
-
-   ```bash
-   cd backend
-   node server.js
-   ```
-
-2. Start the frontend application:
-
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-3. Open your browser and navigate to `http://localhost:3000` to view the application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the frontend directory, you can run:
+In the project directory, you can run:
 
-- `npm start`: Runs the app in development mode.
-- `npm test`: Launches the test runner.
-- `npm run build`: Builds the app for production.
-- `npm run eject`: Ejects the configuration files.
+### `npm start`
 
-## Contributing
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
